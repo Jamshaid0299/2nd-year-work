@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="full name">Full Name</label>
+   <input type="text" id="full name" name="full name"></br>
+   <label for="last name">Last Name</label>
+   <input type="text" id="last name" name="last name"></br>
+   <label for="email">Email</label>
+   <input type="text" id="email" name="email"></br>
+   <button onclick="main()">Submit</button>
+
+<script>
+    let emptyarr = [];
+    let id = 0;
+    const main = () => {
+        let fullname = document.getElementById("full name").value;
+        let lastname = document.getElementById("last name").value;
+        let email = document.getElementById("email").value;
+        let user = {
+            id: ++id,
+            fullname: fullname,
+            lastname: lastname,
+            email: email
+        };
+        emptyarr.push(user);
+        console.log(emptyarr);
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+</script>    
+
+
+
+
+
+
+</body>
+</html>
